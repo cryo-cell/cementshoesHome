@@ -14,7 +14,6 @@ body{
           border-radius: 15px;
           width: 95%;
               grid-template-columns: 25% 25% 25% 25%;
-          grid-template-rows: 70% 40% 30% 22%;
         column-gap: 5px;
         row-gap: 5px;
         margin: auto;
@@ -175,7 +174,6 @@ body{
           border-radius: 15px;
           width: 600px;
           grid-template-columns: 20% 40% 40%;
-          grid-template-rows: 3.5% 10% 25% 25% 25% 25% 10%;
         column-gap: 5px;
         row-gap: 5px;
       }
@@ -340,7 +338,6 @@ body{
           border-radius: 15px;
           width: 800px;
           grid-template-columns: 15% 35% 25% 25%;
-          grid-template-rows: 5% 25% 30% 30% 15% 5%;
         column-gap: 5px;
         row-gap: 5px;
     
@@ -520,7 +517,6 @@ body{
           border-radius: 15px;
           width: 95%;
           grid-template-columns: 21% 29% 29% 21%;
-          grid-template-rows: 8% 30% 40% 17%;
         column-gap: 5px;
         row-gap: 5px;
       }
