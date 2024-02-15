@@ -1,0 +1,596 @@
+body{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 1500px;
+  font-size: 4vh;
+  background: lightblue;color: #6e9de3;
+  
+}
+.tablet{
+    display: grid;
+    border-radius: 15px;
+    width: 95%;
+    grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 5px;
+  row-gap: 5px;
+
+}
+.hamburger{
+  display: none;
+}
+img{
+  width:225px;
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 900;
+
+}
+a:visited{
+  color: #6e9de3;
+
+
+}
+a:hover:visited{
+  color: lightblue;
+
+}
+ul, li{
+  display: flex;
+  margin-right: 15px;
+  text-decoration: none; 
+     
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  border-radius: 15px;
+  height: 35%;
+  margin-top: 5px;
+
+}
+.boxes:hover{
+  background-color: lightblue;    
+}
+.boxes:hover a{
+  color: navy
+}
+.boxes:hover a:hover{
+  color: #6e9de3
+}
+.menuBox {
+    grid-column-start: 1;
+}
+.navBox {
+      grid-column-start: 2;
+      grid-column-end: 4;
+}
+.cartBox {
+  grid-column-start: 4;
+}
+.content {
+  border: solid 1px purple ;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #6e9de3;
+  color: darkblue
+
+
+
+}
+
+.bottomContent {
+      grid-column: 1/ -1;
+      display: flex;
+      flex-flow: column nowrap;
+       
+}
+
+.socialMedia {
+  grid-column:  1/-1;
+
+}
+
+.socialButton {
+  margin-left: 100px; 
+}
+button{
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:10px;
+}
+button:hover{
+  background-color: #6e9de3;
+  border: solid 2px navy;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.content button:hover{
+  
+  background-color: navy;
+  border: solid 2px #6e9de3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.quarter{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: start;
+  border: solid 0.1px lightgrey;
+  background-color: #6e9de3;
+  color: darkblue;
+
+}
+.quarter:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: navy;
+  color: #6e9de3;
+
+}
+
+footer{
+  grid-column: 1/-1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: navy;
+  color: #6e9de3;
+}
+
+@media(max-width: 999px){
+  body{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 3vh;
+    width: 600px;
+    margin: auto;
+
+  }
+  .tablet{
+      display: grid;
+      border-radius: 15px;
+      width: 600px;
+      grid-template-columns: 20% 30% 20% 30%;
+      column-gap: 5px;
+      row-gap: 5px;
+  }
+  img{
+    width: 65%;
+    height: 70%;
+    border-radius: 15px;
+  }
+  .bar{
+    background-color: #6e9de3;
+      padding: 6px;
+      margin: 2px;
+      width: 75%;
+      grid-column: 1/2;
+      border-radius: 15px;
+      border: solid 5px navy; 
+  }
+  .hamburger{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    width: auto;
+    grid-column: 1/2;
+    background-color: lightblue;
+    border: none;
+  }
+  .boxes{
+    height: 75px;
+  }
+  .menuBox {
+      border: solid 1px black;
+      grid-column: 4/5;
+      display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+   
+  }
+  .mobile-menu{
+    display: none;
+    font-size: 1px;
+    background-color: lightblue;
+    position: relative;
+  bottom: 80px;
+    border-radius: 15px;
+  }
+  .open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    grid-column: 1/2;
+    width: 85px;
+  } 
+  .open .mobile-menu h2{
+    font-size: 3vh;
+  }
+  .open .mobile-menu a{
+    color: navy;
+    }
+    .open .mobile-menu a:hover{
+      color: #6e9de3;
+      }
+  .cartBox {
+        grid-column: 3/4;
+        border: solid 1px black;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        
+  }
+  
+  .navBox {
+        grid-column: 1/ -1;
+        height: 100%;
+        border: solid 1px black;
+        margin-bottom: 10px;
+        display: none;
+        justify-content: center;
+  }
+  
+  .bottomContent {
+        grid-column: 1/ -1;
+        height: 100%;
+        border: solid 1px black;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;  
+  }
+  .quarter{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+    border: solid 1px black;
+    height: auto;
+    padding: 25px;    
+  }
+  .item1, .item2, .item4, .item3{
+    grid-column: 1/5;
+
+  }
+  
+  .socialMedia {
+    grid-column:  1/-1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border: solid 1px black;
+  
+  }
+  .socialButtons{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;  
+  }
+  .socialButton {
+    margin-left: 10px; 
+  }
+}
+
+@media(min-width: 1000px){
+  body{
+    width: 800px;
+    margin: auto;
+
+
+
+  }
+  .tablet{
+      display: grid;
+      border-radius: 15px;
+      width: 800px;
+      grid-template-columns: 15% 15% 15% 15% 15% 15%;
+      column-gap: 5px;
+    row-gap: 5px;
+
+  }
+ 
+  img{
+    width: 75%;
+    height: 60%;
+    border-radius: 15px;
+  }
+  .bar{
+    background-color: #6e9de3;
+      padding: 5px;
+      margin: 2px;
+      width: 75%;
+      grid-column: 1/2;
+      border-radius: 15px;
+      border: solid 5px navy; 
+  }
+  .hamburger{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    width: auto;
+    grid-column: 1/2;
+    background-color: lightblue;
+    border: none;
+  }
+  .mobile-menu{
+    display: none;
+    font-size: 1px;
+    background-color: lightblue;
+    position: relative;
+    LEFT: 150px;
+  bottom: 80px;
+    border-radius: 15px;
+  }
+  .open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    grid-column: 1/2;
+    width: 135px;
+  } 
+  .open .mobile-menu h2{
+    font-size: 3vh;
+  }
+  .open .mobile-menu a{
+    color: navy;
+    }
+    .open .mobile-menu a:hover{
+      color: #6e9de3;
+      }
+  .boxes{
+    height: 70px;
+  }
+   .cartBox {
+        grid-column: 4/5;
+        border: solid 1px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+
+  }
+  
+  .navBox {
+       
+        display: none;
+  }
+  .menuBox {
+    border: solid 1px black;
+    grid-column: 5/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .bottomContent {
+        grid-column: 1/ -1;
+        height: 100%;
+        border: solid 1px black;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;  
+  }
+  .quarter{
+    border: solid 1px navy;
+    height: auto;
+    padding: 20px;
+  }
+  .item1, .item3{
+    grid-column: 1/4;
+
+  }
+  .item2, .item4{
+    grid-column: 4/7;
+
+  }
+  .socialMedia {
+    grid-column:  1/-1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border: solid 1px black;
+  
+  }
+  .socialButtons{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;  
+  }
+  .socialButton {
+    margin-left: 10px; 
+  }
+  footer{
+      grid-column: 1/-1;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      
+    }
+  
+}
+@media(min-width: 1300px){
+
+  body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1500px;
+    font-size: 4vh;
+    background: lightblue;color: #6e9de3;
+    margin: auto;
+    
+  }
+  .tablet{
+      display: grid;
+      border-radius: 15px;
+      width: 95%;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 3.5% 20% 20% 20% 20% 12% 12%;
+    column-gap: 5px;
+  
+  }
+  #mobileNavigation{
+    display: none;
+  }
+  
+  img{
+    width: 75%;
+    height: 60%;
+    border-radius: 15px;
+  }  a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+  
+  }
+  a:visited{
+    color: #6e9de3;
+  
+  
+  }
+  a:hover:visited{
+    color: lightblue;
+  
+  }
+  ul, li{
+    display: flex;
+    margin-right: 15px;
+    text-decoration: none; 
+       
+  }
+  
+  
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px navy;
+    background-color: navy;
+    border-radius: 15px;
+    height: 45px;
+  
+  
+  }
+  .navBox {
+        grid-column-start: 1;
+        grid-column-end: 3;
+  }
+  .cartBox {
+    grid-column: 3/4;
+  }
+  
+  .menuBox{
+    grid-column: 4/5;
+  }
+  .content {
+    border: solid 1px purple ;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #6e9de3;
+    color: darkblue
+  
+  
+  
+  }
+  
+  .bottomContent {
+        grid-column: 1/ -1;
+        display: flex;
+        flex-flow: column nowrap;
+         
+  }
+  
+  .socialMedia {
+    grid-column:  1/-1;
+  
+  }
+  
+  .socialButton {
+    margin-left: 100px; 
+  }
+  button{
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:10px;
+  }
+  button:hover{
+    background-color: #6e9de3;
+    border: solid 2px navy;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  .content button:hover{
+    
+    background-color: navy;
+    border: solid 2px #6e9de3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  .quarter{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    border: solid 0.1px lightgrey;
+    background-color: #6e9de3;
+    color: darkblue;
+  
+  }
+  .quarter:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: navy;
+    color: #6e9de3;
+  
+  }
+  .item1{
+    grid-column: 1/2;
+
+  }
+  .item2{
+    grid-column: 2/3;
+
+  }
+  .item3{
+    grid-column: 3/4;
+
+  }
+  .item4{
+    grid-column: 4/5;
+
+  }
+  
+  footer{
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: navy;
+    color: #6e9de3;
+  }
+  
+}

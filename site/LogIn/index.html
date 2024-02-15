@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECRET DISCOUNT CLUB</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="tablet">
+    <div id="mobileNavigation" class="hamburger boxes" onclick="toggleMobileMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <ul class="mobile-menu" >
+        <li class="link" ><a href="../navigation/order/index.html"><h2>ORDER</h2></a></li>
+        <li class="link" ><a href="../navigation/menu/index.html"><h2>MENU</h2></a></li>
+        <li class="link" ><a href="../navigation/specials/index.html"><h2>SPECIALS</h2></a></li>
+        <li class="link"><a href="../navigation/catering/index.html"><h2>CATERING</h2></a></li>
+        <li class="link" ><a href="../navigation/about/index.html"><h2>ABOUT</h2></a></li>
+        <li class="link" ><a href="../navigation/contact/index.html"><h2>CONTACT</h2></a></li>
+      </ul>
+    </div> 
+    <div class="menuBox boxes" onclick="location.href='../navigation/menu/index.html';">
+      <a href="../navigation/menu/index.html"><h2>MENU</h2></a>
+    </div>  
+    <div class="navBox boxes">
+      <!--<h2>PRIMARY NAVIGATION</h2> -->
+      <nav id="homeNavigation">
+        <ul>
+          <li class="link" id="lnk1"><a href="../navigation/order/index.html"><h2>ORDER</h2></a></li>
+          <li class="link" id="lnk2"><a href="../navigation/menu/index.html"><h2>MENU</h2></a></li>
+          <li class="link" id="lnk3"><a href="../navigation/specials/index.html"><h2>SPECIALS</h2></a></li>
+          <li class="link" id="lnk4"><a href="../navigation/catering/index.html"><h2>CATERING</h2></a></li>
+          <li class="link" id="lnk5"><a href="../navigation/about/index.html"><h2>ABOUT</h2></a></li>
+          <li class="link" id="lnk6"><a href="../navigation/contact/index.html"><h2>CONTACT</h2></a></li>
+        </ul>
+      </nav>
+    </div>   
+    <div class="cartBox boxes"onclick="location.href='../index.html';">
+      <span><a href="../index.html"><h2>HOME</h2></a></span>
+    </div>
+  </div>
+
+  <div class="login">
+    <h2>SECRET CLUB ACCOUNT</h2><br>
+    <form id="login" method="get" action="login.php">
+      <label><b>User Name
+      </b>
+      </label>
+      <input type="text" name="Uname" id="Uname" placeholder="Username">
+      <br><br>
+      <label><b>Password
+      </b>
+      </label>
+      <input type="Password" name="Pass" id="Pass" placeholder="Password">
+      <br><br>
+      <input type="button" name="log" id="log" value="Log In Here">
+      <br><br>
+      <input type="checkbox" id="check">
+      <span>Remember me</span>
+      <br><br>
+      <input type="checkbox" id="pass">
+      <span>Forgot <a href="#">Password</a></span>
+    </form>
+  </div>
+  <script src="../scripts.js"></script>
+</body>
+</html>
