@@ -166,7 +166,7 @@ body{
   font-size: 3vh;
   width: 600px;
   margin: auto;
-  margin-top: 5px;
+  
 
 }
 .tablet{
@@ -331,7 +331,7 @@ bottom: 80px;
 body{
   width: 800px;
   margin: auto;
-  margin-top: 5px;
+  
 }
 .tablet{
     display: grid;
@@ -560,7 +560,7 @@ ul{
   display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 10px;
+
 border: solid 10px navy; 
 height: 45px;
 
