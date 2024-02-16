@@ -571,10 +571,6 @@ height: 45px;
 .navBox {
       grid-column: 2/4;
 }
-#homeNavigation{
-  display: flex;
-  flex-direction: column nowrap;
-}
 .cartBox {
   grid-column-start: 4;
 }
