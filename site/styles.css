@@ -151,7 +151,7 @@ footer {
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 800px;
+    width: 600px;
     margin: auto;
   }
   .tablet {
@@ -475,7 +475,7 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 1400px;
     font-size: 4vh;
     background: lightblue;
