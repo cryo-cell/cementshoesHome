@@ -1,15 +1,16 @@
-body{
+body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
   width: 1500px;
   font-size: 4vh;
-  background: #6da5e0; color: navy;
-  margin: auto; 
+  background: #6da5e0;
+  color: navy;
+  margin: auto;
 }
 
-.tablet{
+.tablet {
   display: grid;
   border-radius: 15px;
   width: 95%;
@@ -19,41 +20,37 @@ body{
   row-gap: 10px;
 }
 
-h3{
+h3 {
   color: #6e9de3;
 }
-.hamburger{
+.hamburger {
   display: none;
 }
-a{
+a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 900;
-  color:#6da5e0;
+  color: #6da5e0;
 }
-a:visited{
-  color:#6da5e0;
-
-
+a:visited {
+  color: #6da5e0;
 }
-a:hover:visited{
+a:hover:visited {
   color: lightblue;
-
 }
-ul, li{
+ul,
+li {
   display: flex;
   margin-right: 15px;
-  text-decoration: none; 
-      
+  text-decoration: none;
 }
 .boxes {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px purple ;
+  border: solid 1px purple;
   background-color: navy;
-
 }
 .menuBox {
   grid-column-start: 1;
@@ -71,28 +68,26 @@ ul, li{
 }
 
 .socialMedia {
-  grid-column:  1/-1;
-
+  grid-column: 1/-1;
 }
 .socialButton {
-  margin-left: 100px; 
+  margin-left: 100px;
 }
 
-button{
-  background-color:#0a0a23;
+button {
+  background-color: #0a0a23;
   color: lightblue;
-  border:none; 
-  border-radius:10px; 
-  padding:10px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
 }
-button:hover{
+button:hover {
   background-color: #6e9de3;
   border: solid 2px navy;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-footer{
+footer {
   grid-column: 1/-1;
   display: flex;
   flex-flow: row wrap;
@@ -101,8 +96,8 @@ footer{
   color: #6e9de3;
 }
 
-@media(max-width: 999px){
-  body{
+@media (max-width: 999px) {
+  body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -110,7 +105,7 @@ footer{
     width: 480px;
     margin: auto;
   }
-  .tablet{
+  .tablet {
     display: grid;
     border-radius: 15px;
     width: 480px;
@@ -118,7 +113,7 @@ footer{
     column-gap: 5%;
     row-gap: 2%;
   }
-  
+
   .menuBox {
     border: solid 1px black;
     grid-column-start: 1;
@@ -126,19 +121,18 @@ footer{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-  
   }
-  .bar{
+  .bar {
     background-color: #6e9de3;
     padding: 6px;
     margin: 2px;
     width: 75%;
     grid-column: 1/2;
     border-radius: 15px;
-    border: solid 5px navy; 
+    border: solid 5px navy;
   }
-  
-  .hamburger{
+
+  .hamburger {
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
@@ -148,20 +142,19 @@ footer{
     background-color: #6da5e0;
     border: none;
   }
-  .boxes{
+  .boxes {
     height: 75px;
   }
-  
+
   .menuBox {
-      border: solid 1px black;
-      grid-column: 2/3;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-   
+    border: solid 1px black;
+    grid-column: 2/3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
     font-size: 1px;
     background-color: lightblue;
@@ -169,24 +162,24 @@ footer{
     bottom: 80px;
     border-radius: 15px;
   }
-  .open .mobile-menu{
+  .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
     width: 100px;
-  } 
-  .open .mobile-menu h2{
+  }
+  .open .mobile-menu h2 {
     font-size: 3vh;
   }
-  .open .mobile-menu a{
+  .open .mobile-menu a {
     color: navy;
   }
-  .open .mobile-menu a:hover{
+  .open .mobile-menu a:hover {
     color: #6e9de3;
   }
-  
+
   .logoBox {
     grid-column-start: 2;
     border: solid 1px black;
@@ -197,7 +190,6 @@ footer{
   .cartBox {
     grid-column-start: 3;
     border: solid 1px black;
-        
   }
 
   .navBox {
@@ -210,223 +202,206 @@ footer{
   }
 
   .socialMedia {
-    grid-column:  1/-1;
+    grid-column: 1/-1;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     border: solid 1px black;
-
   }
-  .socialButtons{
+  .socialButtons {
     display: flex;
     align-items: center;
-    flex-flow: row nowrap;  
+    flex-flow: row nowrap;
   }
   .socialButton {
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 }
-@media(min-width: 1000px){
-  body{
+@media (min-width: 1000px) {
+  body {
     width: 800px;
     margin: auto;
     margin-top: 5px;
   }
-  .tablet{
-      display: grid;
-      border-radius: 15px;
-      width: 800px;
-      grid-template-columns: 15% 35% 25% 25%;
+  .tablet {
+    display: grid;
+    border-radius: 15px;
+    width: 800px;
+    grid-template-columns: 15% 35% 25% 25%;
     column-gap: 5px;
     row-gap: 5px;
-  
   }
-  
-  img{
+
+  img {
     width: 75%;
     height: 60%;
     border-radius: 15px;
   }
-  .bar{
+  .bar {
     background-color: #6e9de3;
     padding: 5px;
     margin: 2px;
     width: 75%;
     grid-column: 1/2;
     border-radius: 15px;
-    border: solid 5px navy; 
-  
+    border: solid 5px navy;
   }
-  
-  .hamburger{
+
+  .hamburger {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start ;
+    justify-content: start;
     align-items: start;
     width: auto;
     grid-column: 1/2;
     background-color: #6da5e0;
     border: none;
-  
   }
-  
-  .mobile-menu{
+
+  .mobile-menu {
     display: none;
     background-color: lightblue;
     position: relative;
     left: 420px;
     bottom: 110px;
   }
-  .open .mobile-menu{
+  .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
     width: 135px;
-  } 
-  .open .mobile-menu h2{
+  }
+  .open .mobile-menu h2 {
     font-size: 3vh;
   }
-  .open .mobile-menu a{
+  .open .mobile-menu a {
     color: navy;
   }
-  .open .mobile-menu a:hover{
+  .open .mobile-menu a:hover {
     color: #6e9de3;
   }
   .menuBox {
-      border: solid 1px black;
-      grid-column-start: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    border: solid 1px black;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .logoBox {
-        grid-column-start: 2;
-        border: solid 1px black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    grid-column-start: 2;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cartBox {
-        grid-column-start: 4;
-        border: solid 1px black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0;
-  
+    grid-column-start: 4;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
   }
-  
+
   .navBox {
-       
-        display: none;
+    display: none;
   }
-  .iconBox{
+  .iconBox {
     display: inline;
   }
-  .boxes{
-      height: 68px;
+  .boxes {
+    height: 68px;
   }
   .socialMedia {
-    grid-column:  1/-1;
+    grid-column: 1/-1;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     border: solid 1px black;
-  
   }
-  .socialButtons{
+  .socialButtons {
     display: flex;
     align-items: center;
-    flex-flow: row nowrap;  
+    flex-flow: row nowrap;
   }
   .socialButton {
-    margin-left: 10px; 
+    margin-left: 10px;
   }
-  footer{
-      grid-column: 1/-1;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      
+  footer {
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
-  
+}
+
+@media (min-width: 1300px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1400px;
+    font-size: 4vh;
+  }
+  .tablet {
+    display: grid;
+    border-radius: 15px;
+    width: 95%;
+    grid-template-columns: 21% 29% 29% 21%;
+    grid-template-rows: 8% 30% 40% 17%;
+    column-gap: 5px;
+    row-gap: 5px;
   }
 
-  @media(min-width: 1300px){
-    body{
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: space-around;
-      width: 1400px;
-      font-size: 4vh;
-      
-    }
-    .tablet{
-        display: grid;
-        border-radius: 15px;
-        width: 95%;
-        grid-template-columns: 21% 29% 29% 21%;
-        grid-template-rows: 8% 30% 40% 17%;
-      column-gap: 5px;
-      row-gap: 5px;
-    }
-    
-    img{
-      width: 75%;
-      height: 50%;
-      border-radius: 15px;
-    }
-    a{
-      text-decoration: none;
-      
-    }
-    a:visited{
-      color:#6da5e0;
-    
-    
-    }
-    a:hover:visited{
-      color: lightblue;
-    
-    }
-    li{
-      margin-right: 25px;
-    }
-    ul{
-      text-decoration: none;
-      margin: auto; 
-    
-    }
-    
-    .boxes{
-      display: flex;
+  img {
+    width: 75%;
+    height: 50%;
+    border-radius: 15px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: #6da5e0;
+  }
+  a:hover:visited {
+    color: lightblue;
+  }
+  li {
+    margin-right: 25px;
+  }
+  ul {
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .boxes {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    border: solid 10px navy; 
+    border: solid 10px navy;
     height: 45px;
-    
-    
-    }
-    .hamburger{
-      display: none;
-    }
-    .menuBox {
-        grid-column-start: 1;
-    }
-    
-    .logoBox {
-          grid-column-start: 2;
-    }
-    .navBox {
-          grid-column: 2/4;
-    }
-   
-    .cartBox {
-      grid-column-start: 4;
-    }
   }
+  .hamburger {
+    display: none;
+  }
+  .menuBox {
+    grid-column-start: 1;
+  }
+
+  .logoBox {
+    grid-column-start: 2;
+  }
+  .navBox {
+    grid-column: 2/4;
+  }
+
+  .cartBox {
+    grid-column-start: 4;
+  }
+}

@@ -1,113 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocCementShoes_Desktop_Wireframeument</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocCementShoes_Desktop_Wireframeument</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  
+  <body>
     <div class="tablet">
+      <div
+        id="mobileNavigation"
+        class="hamburger boxes"
+        onclick="toggleMobileMenu()"
+      >
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <ul class="mobile-menu">
+          <li class="link">
+            <a href="navigation/order/index.html"><h2>ORDER</h2></a>
+          </li>
+          <li class="link">
+            <a href="navigation/menu/index.html"><h2>MENU</h2></a>
+          </li>
+          <li class="link">
+            <a href="navigation/specials/index.html"><h2>SPECIALS</h2></a>
+          </li>
+          <li class="link">
+            <a href="navigation/catering/index.html"><h2>CATERING</h2></a>
+          </li>
+          <li class="link">
+            <a href="navigation/about/index.html"><h2>ABOUT</h2></a>
+          </li>
+          <li class="link">
+            <a href="navigation/contact/index.html"><h2>CONTACT</h2></a>
+          </li>
+        </ul>
+      </div>
 
-      <div id="mobileNavigation" class="hamburger boxes" onclick="toggleMobileMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <ul class="mobile-menu" >
-                <li class="link" ><a href="navigation/order/index.html"><h2>ORDER</h2></a></li>
-                <li class="link" ><a href="navigation/menu/index.html"><h2>MENU</h2></a></li>
-                <li class="link" ><a href="navigation/specials/index.html"><h2>SPECIALS</h2></a></li>
-                <li class="link"><a href="navigation/catering/index.html"><h2>CATERING</h2></a></li>
-                <li class="link" ><a href="navigation/about/index.html"><h2>ABOUT</h2></a></li>
-                <li class="link" ><a href="navigation/contact/index.html"><h2>CONTACT</h2></a></li>
-              </ul>
-      </div> 
-      
       <div class="menuBox boxes" onclick="location.href='index.html';">
         <a href="index.html"><h2>CementShoes</h2></a>
-      </div>               
-      
-        
+      </div>
+
       <div class="navBox boxes">
         <!--<h2>PRIMARY NAVIGATION</h2> -->
         <nav id="homeNavigation">
           <ul>
-                <li class="link" ><a href="navigation/order/index.html"><h2>ORDER</h2></a></li>
-                <li class="link" ><a href="navigation/menu/index.html"><h2>MENU</h2></a></li>
-                <li class="link" ><a href="navigation/specials/index.html"><h2>SPECIALS</h2></a></li>
-                <li class="link"><a href="navigation/catering/index.html"><h2>CATERING</h2></a></li>
-                <li class="link" ><a href="navigation/about/index.html"><h2>ABOUT</h2></a></li>
-                <li class="link" ><a href="navigation/contact/index.html"><h2>CONTACT</h2></a></li>
-              </ul>
+            <li class="link">
+              <a href="navigation/order/index.html"><h2>ORDER</h2></a>
+            </li>
+            <li class="link">
+              <a href="navigation/menu/index.html"><h2>MENU</h2></a>
+            </li>
+            <li class="link">
+              <a href="navigation/specials/index.html"><h2>SPECIALS</h2></a>
+            </li>
+            <li class="link">
+              <a href="navigation/catering/index.html"><h2>CATERING</h2></a>
+            </li>
+            <li class="link">
+              <a href="navigation/about/index.html"><h2>ABOUT</h2></a>
+            </li>
+            <li class="link">
+              <a href="navigation/contact/index.html"><h2>CONTACT</h2></a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="cartBox boxes" onclick="location.href='LogIn/index.html';">
         <a href="LogIn/index.html"><h2>Log In</h2></a>
       </div>
-      
-        
+
       <div class="bottomContent content">
         <h3>JOIN US</h3>
-        <p>Would you like to join the discount club?<p>
-
-        <button onclick="location.href='LogIn/index.html';">
-          JOIN OUR DIVERS
-        </button>
-       <button onclick="location.href='navigation/menu/index.html';">
+        <p>Would you like to join the discount club?</p>
+        <p>
+          <button onclick="location.href='LogIn/index.html';">
+            JOIN OUR DIVERS
+          </button>
+          <button onclick="location.href='navigation/menu/index.html';">
             CONTINUE TO MENU
-        </button>
+          </button>
+        </p>
       </div>
+
       <div class="item1 quarter happyHour">
         <h4>Happy Hour</h4>
-        <img src="mainImages/happy-hour.jpg" alt="An aesthetic image of customers sitting around the bar." >
+        <img
+          src="mainImages/happy-hour.jpg"
+          alt="An aesthetic image of customers sitting around the bar."
+        />
         <p>Happiness Starts Here</p>
-       
       </div>
 
       <div class="item2 quarter wait">
         <h4>Live Wait Time</h4>
-        <img src="mainImages/wait-time.jpg" alt="A busy first floor packed with happy customers." >
+        <img
+          src="mainImages/wait-time.jpg"
+          alt="A busy first floor packed with happy customers."
+        />
         <p>Book Ahead</p>
-
       </div>
 
       <div class="item3 quarter reviews">
         <h4>Honest Reviews</h4>
-        <img src="mainImages/reviews.jpg" alt="A customer leaving an online review at the bar." >
+        <img
+          src="mainImages/reviews.jpg"
+          alt="A customer leaving an online review at the bar."
+        />
         <p>From The Source</p>
       </div>
 
       <div class="item4 quarter staff">
         <h4>Meet Our Crew</h4>
-        <img src="mainImages/staff.jpg" alt="Our valued staff members hard at work." >
+        <img
+          src="mainImages/staff.jpg"
+          alt="Our valued staff members hard at work."
+        />
         <p>Meet the Family</p>
       </div>
       <div class="socialMedia content">
         <h4>FOLLOW US</h4>
         <div class="socialButtons">
-          <button class="socialButton">       
-                    FACEBOOK
-          </button>
-          <button class="socialButton">
-            TWITTER
-          </button>
-          <button class="socialButton">
-              INSTAGRAM
-          </button>
+          <button class="socialButton">FACEBOOK</button>
+          <button class="socialButton">TWITTER</button>
+          <button class="socialButton">INSTAGRAM</button>
         </div>
       </div>
 
-     
-<footer>
-  Copyright &copy; 2023 Cement Shoes Inc. <a href="mailto:vashcarpenter@gmail.com">vashcarpenter@gmail.com</a>
-</footer>
-</div>
-<script src="scripts.js"></script>
-</body>
+      <footer>
+        Copyright &copy; 2023 Cement Shoes Inc.
+        <a href="mailto:vashcarpenter@gmail.com">vashcarpenter@gmail.com</a>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
 </html>
-
-  
-
