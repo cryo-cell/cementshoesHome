@@ -349,13 +349,13 @@ footer {
     background-color: lightblue;
     position: relative;
     left: 420px;
-    bottom: 110px;
+    bottom: 100px;
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: end;
+    align-items: end;
+    justify-content: center;
     grid-column: 1/2;
     width: 135px;
   }
