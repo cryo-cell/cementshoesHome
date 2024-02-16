@@ -2,11 +2,12 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 1500px;
   font-size: 4vh;
   background: lightblue;
   color: #6e9de3;
+  width: 100vh;
 }
 .tablet {
   display: grid;
@@ -150,7 +151,7 @@ footer {
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 600px;
+    width: 800px;
     margin: auto;
   }
   .tablet {
