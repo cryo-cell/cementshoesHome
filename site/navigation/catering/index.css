@@ -3,7 +3,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  width: 1500px;
+  width: auto;
   font-size: 4vh;
   background: lightblue;
   color: #6e9de3;
@@ -130,19 +130,19 @@ footer {
   color: #6e9de3;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 600px;
+    width: auto;
     margin: auto;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 600px;
+    width: auto;
     grid-template-columns: 20% 30% 20% 30%;
     column-gap: 5px;
     row-gap: 5px;
@@ -196,7 +196,6 @@ footer {
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
-    width: 85px;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;

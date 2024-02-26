@@ -3,16 +3,14 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  width: 1500px;
+  width: auto;
   font-size: 4vh;
   background: lightblue;
   color: #6e9de3;
-  width: 100vh;
 }
 .tablet {
   display: grid;
   border-radius: 15px;
-  width: 95%;
   grid-template-columns: 25% 25% 25% 25%;
   column-gap: 5px;
   row-gap: 5px;
@@ -21,7 +19,12 @@ body {
 .hamburger {
   display: none;
 }
-
+.navBox {
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
 a {
   text-decoration: none;
   font-size: 16px;
@@ -145,19 +148,19 @@ footer {
   color: #6e9de3;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 800px;
-    margin: auto;
+    width: auto;
+    margin-right: 4%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 600px;
+    width: auto;
     grid-template-columns: 20% 40% 40%;
     column-gap: 5px;
     row-gap: 5px;
@@ -213,7 +216,6 @@ footer {
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
-    width: 85px;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -224,6 +226,7 @@ footer {
   .open .mobile-menu a:hover {
     color: #6e9de3;
   }
+  
   .logoBox {
     grid-column-start: 2;
     border: solid 1px black;
@@ -305,15 +308,15 @@ footer {
     margin-left: 10px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 601px) {
   body {
-    width: 800px;
-    margin: auto;
+    width: auto;
+    margin-right: 3%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 800px;
+    width: auto;
     grid-template-columns: 15% 35% 25% 25%;
     column-gap: 5px;
     row-gap: 5px;
@@ -349,16 +352,15 @@ footer {
     display: none;
     background-color: lightblue;
     position: relative;
-    left: 420px;
-    bottom: 100px;
+    bottom: 130%;
+    
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    grid-column: 1/2;
-    width: 135px;
+    
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -477,15 +479,16 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    width: 1400px;
+    width: auto;
     font-size: 4vh;
     background: lightblue;
     color: #6e9de3;
+    margin-left: 2%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 95%;
+    width: 100%;
     grid-template-columns: 21% 29% 29% 21%;
     column-gap: 5px;
     row-gap: 5px;

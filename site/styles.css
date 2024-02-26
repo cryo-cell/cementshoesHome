@@ -3,11 +3,10 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  width: 1500px;
+  width: auto;
   font-size: 4vh;
   background: lightblue;
   color: #6e9de3;
-  width: 100vh;
 }
 .tablet {
   display: grid;
@@ -145,19 +144,19 @@ footer {
   color: #6e9de3;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 600px;
-    margin: auto;
+    width: auto;
+    margin-right: 6%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 600px;
+    width: auto;
     grid-template-columns: 20% 40% 40%;
     column-gap: 5px;
     row-gap: 5px;
@@ -213,7 +212,6 @@ footer {
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
-    width: 85px;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -305,15 +303,15 @@ footer {
     margin-left: 10px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 601px) {
   body {
-    width: 800px;
-    margin: auto;
+    width: auto;
+    margin-right: 3%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 800px;
+    width: auto;
     grid-template-columns: 15% 35% 25% 25%;
     column-gap: 5px;
     row-gap: 5px;
@@ -349,16 +347,15 @@ footer {
     display: none;
     background-color: lightblue;
     position: relative;
-    left: 420px;
-    bottom: 110px;
+    bottom: 150%;
+    
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    grid-column: 1/2;
-    width: 135px;
+    
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -476,10 +473,11 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 1400px;
+    width: auto;
     font-size: 4vh;
     background: lightblue;
     color: #6e9de3;
+    margin-left:2%;
   }
   .tablet {
     display: grid;
@@ -504,13 +502,15 @@ footer {
   a:hover:visited {
     color: lightblue;
   }
-  li {
-    margin-right: 25px;
-  }
+  
   ul {
     text-decoration: none;
     margin: auto;
   }
+  .navBox li {
+    padding: 0.5%;
+  }
+  
 
   .boxes {
     display: flex;

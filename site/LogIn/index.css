@@ -3,7 +3,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  width: 1500px;
+  width: auto;
   font-size: 4vh;
   background: #6da5e0;
   color: navy;
@@ -22,6 +22,7 @@ body {
 
 h3 {
   color: #6e9de3;
+  font-size: 3vh;
 }
 .hamburger {
   display: none;
@@ -96,19 +97,19 @@ footer {
   color: #6e9de3;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 480px;
-    margin: auto;
+    width: auto;
+    margin: 3%; 
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 480px;
+    width: 100%;
     grid-template-columns: 30% 30% 30%;
     column-gap: 5%;
     row-gap: 2%;
@@ -217,16 +218,17 @@ footer {
     margin-left: 10px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 601px) {
   body {
-    width: 800px;
+    width: auto;
     margin: auto;
     margin-top: 5px;
+    padding-right:2%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 800px;
+    width: 95%;
     grid-template-columns: 15% 35% 25% 25%;
     column-gap: 5px;
     row-gap: 5px;
@@ -262,18 +264,17 @@ footer {
     display: none;
     background-color: lightblue;
     position: relative;
-    left: 420px;
-    bottom: 110px;
+    bottom: 150%;
+    
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    grid-column: 1/2;
-    width: 135px;
+    
   }
-  .open .mobile-menu h2 {
+  .open .mobile-menu h2{
     font-size: 3vh;
   }
   .open .mobile-menu a {
@@ -344,7 +345,7 @@ footer {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    width: 1400px;
+    width: auto;
     font-size: 4vh;
   }
   .tablet {

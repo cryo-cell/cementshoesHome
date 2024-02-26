@@ -3,7 +3,7 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  width: 1500px;
+  width: auto;
   font-size: 4vh;
   background: lightblue;
   color: #6e9de3;
@@ -130,19 +130,19 @@ footer {
   color: #6e9de3;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
   body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     font-size: 3vh;
-    width: 600px;
-    margin: auto;
+    width: auto;
+    margin-right: 6%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 600px;
+    width: auto;
     grid-template-columns: 20% 30% 20% 30%;
     column-gap: 5px;
     row-gap: 5px;
@@ -176,7 +176,7 @@ footer {
   }
   .menuBox {
     border: solid 1px black;
-    grid-column: 4/5;
+    grid-column: 2/4;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -196,7 +196,6 @@ footer {
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
-    width: 85px;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -208,7 +207,7 @@ footer {
     color: #6e9de3;
   }
   .cartBox {
-    grid-column: 3/4;
+    grid-column: 4/5;
     border: solid 1px black;
     display: flex;
     flex-flow: row nowrap;
@@ -267,15 +266,15 @@ footer {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 601px) {
   body {
-    width: 800px;
-    margin: auto;
+    width: auto;
+    margin-left: 7%;
   }
   .tablet {
     display: grid;
     border-radius: 15px;
-    width: 800px;
+    width: auto ;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
     column-gap: 5px;
     row-gap: 5px;
@@ -307,20 +306,16 @@ footer {
   }
   .mobile-menu {
     display: none;
-    font-size: 1px;
     background-color: lightblue;
     position: relative;
-    left: 150px;
-    bottom: 80px;
-    border-radius: 15px;
+    bottom: 150%;    
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    grid-column: 1/2;
-    width: 135px;
+    
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -335,7 +330,7 @@ footer {
     height: 70px;
   }
   .cartBox {
-    grid-column: 4/5;
+    grid-column: 6/7;
     border: solid 1px black;
     display: flex;
     justify-content: center;
@@ -348,7 +343,7 @@ footer {
   }
   .menuBox {
     border: solid 1px black;
-    grid-column: 5/7;
+    grid-column: 4/6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,13 +393,13 @@ footer {
     justify-content: center;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    width: 1500px;
+    width: auto;
     font-size: 4vh;
     background: lightblue;
     color: #6e9de3;
@@ -440,7 +435,6 @@ footer {
   ul,
   li {
     display: flex;
-    margin-right: 15px;
     text-decoration: none;
   }
 
@@ -458,11 +452,11 @@ footer {
     grid-column-end: 3;
   }
   .cartBox {
-    grid-column: 3/4;
+    grid-column: 4/5;
   }
 
   .menuBox {
-    grid-column: 4/5;
+    grid-column: 3/4;
   }
   .content {
     border: solid 1px purple;
@@ -538,4 +532,10 @@ footer {
     background-color: navy;
     color: #6e9de3;
   }
+
+@media (min-width: 1700px) {
+  .navBox li {
+    font-size: 100vh;
+  }
+}
 }
