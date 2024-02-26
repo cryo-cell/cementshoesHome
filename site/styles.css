@@ -310,6 +310,30 @@ footer {
   .socialButton {
     margin-left: 10px;
   }
+  #contactData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white; 
+    font-size: 24px;
+  
+  }
+  #aboutData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white; 
+    font-size: 24px;
+
+  }
+  #aboutButtons {
+    display: flex;
+    
+  }
 }
 @media (min-width: 601px) {
   body {
@@ -476,6 +500,30 @@ footer {
   .socialButton {
     margin-left: 10px;
   }
+  #contactData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white; 
+    font-size: 24px;
+  
+  }
+  #aboutData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white; 
+    font-size: 24px;
+
+  }
+  #aboutButtons {
+    display: flex;
+    
+  }
   footer {
     grid-column: 1/-1;
     display: flex;
@@ -550,8 +598,30 @@ footer {
     color: #6da5e0;
 
   }
+  #contactData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white; 
+    font-size: 24px;
+  
+  }
+  #aboutData {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 160px;
+    margin-right: 160px;
+    color: white; 
+    font-size: 24px;
 
-
+  }
+  #aboutButtons {
+    display: flex;
+    
+  }
   .logoBox {
     grid-column-start: 2;
   }
@@ -590,7 +660,7 @@ footer {
   .bottomContent {
     grid-column: 1/ -1;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow:  column nowrap;
   }
 
   .socialMedia {
@@ -605,7 +675,6 @@ footer {
     color: seashell;
     border: none;
     border-radius: 10px;
-    padding: 10px;
   }
   button:hover {
     background-color: #6e9de3;
