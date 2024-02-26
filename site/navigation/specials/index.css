@@ -106,7 +106,9 @@ li {
   display: flex;
   flex-flow: column nowrap;
 }
-
+.bottomContent p {
+  color: white;
+}
 .socialMedia {
   grid-column: 1/-1;
 }
@@ -147,7 +149,9 @@ footer {
   background-color: navy;
   color: #6e9de3;
 }
-
+footer a{
+  color: white;
+}
 @media (max-width: 600px) {
   body {
     display: flex;
@@ -207,7 +211,7 @@ footer {
 
   .menuBox h2 {
     font-size: 2.5vh;
-    margin-bottom: 35%
+    margin-bottom: 25%
   }
   .mobile-menu {
     display: none;
@@ -390,6 +394,7 @@ footer {
   }
   
   .menuBox h2 {
+    display: none;
     margin-top: 38%;
     color: #6da5e0;
 
@@ -553,6 +558,7 @@ footer {
 
   }
   .menuBox h2 {
+    display: inline;
     margin-bottom: 40%;
     color: #6da5e0;
 

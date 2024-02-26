@@ -81,7 +81,9 @@ li {
   display: flex;
   flex-flow: column nowrap;
 }
-
+.bottomContent p{
+  color: white;
+}
 .socialMedia {
   grid-column: 1/-1;
 }
@@ -129,7 +131,9 @@ footer {
   background-color: navy;
   color: #6e9de3;
 }
-
+footer a{
+  color: white;
+}
 @media (max-width: 600px) {
   body {
     display: flex;
@@ -360,6 +364,7 @@ footer {
   }
 
   .menuBox h2 {
+    display: none;
     margin-top: 53%;
   }
 
@@ -480,6 +485,7 @@ footer {
 
   }
   .menuBox h2 {
+    display: inline;
     margin-bottom: 49%;
     color: #6da5e0;
 
