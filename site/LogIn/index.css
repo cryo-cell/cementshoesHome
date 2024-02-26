@@ -148,7 +148,6 @@ footer {
   }
 
   .menuBox {
-    border: solid 1px black;
     grid-column: 2/3;
     display: flex;
     flex-flow: row nowrap;
@@ -169,7 +168,6 @@ footer {
     align-items: end;
     justify-content: center;
     grid-column: 1/2;
-    width: 100px;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -191,6 +189,13 @@ footer {
   .cartBox {
     grid-column-start: 3;
     border: solid 1px black;
+    background-image: url('../mainImages/logo.jpg');
+    background-size: 125% 125%;
+    opacity: 85%;
+  }
+  .cartBox h2 {
+    font-size: 2vh;
+    margin-bottom: 55%;
   }
 
   .navBox {
@@ -260,21 +265,23 @@ footer {
     border: none;
   }
 
-  .mobile-menu {
+.mobile-menu {
     display: none;
     background-color: lightblue;
     position: relative;
-    bottom: 150%;
+    bottom: 160%;
     
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     justify-content: center;
+    border: dotted 12px navy;
+
     
   }
-  .open .mobile-menu h2{
+  .open .mobile-menu h2 {
     font-size: 3vh;
   }
   .open .mobile-menu a {
@@ -284,11 +291,15 @@ footer {
     color: #6e9de3;
   }
   .menuBox {
-    border: solid 1px black;
     grid-column-start: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+  }
+
+  .cartBox h2 {
+    margin-top: 52%;
   }
 
   .logoBox {
@@ -300,11 +311,14 @@ footer {
   }
   .cartBox {
     grid-column-start: 4;
-    border: solid 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 0;
+    background-image: url('../mainImages/logo.jpg');
+    background-size: 100% 100%;
+    opacity: 85%;
+
   }
 
   .navBox {
@@ -385,8 +399,19 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    border: solid 10px navy;
     height: 45px;
+  }
+  .cartBox {
+    background-image: url('../mainImages/logo.jpg');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    opacity: 85%;
+
+  }
+  .cartBox h2 {
+    margin-bottom: 49%;
+    color: #6da5e0;
+
   }
   .hamburger {
     display: none;

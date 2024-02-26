@@ -175,19 +175,27 @@ footer {
     height: 75px;
   }
   .menuBox {
-    border: solid 1px black;
     grid-column: 2/4;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    background-image: url('../../mainImages/logo.jpg');
+    background-size: 125% 125%;
+    opacity: 85%;
   }
+
+  .menuBox h2 {
+    font-size: 2.5vh;
+    margin-bottom: 45%
+  }
+  
   .mobile-menu {
     display: none;
     font-size: 1px;
     background-color: lightblue;
     position: relative;
-    bottom: 80px;
+    top: 2%;
     border-radius: 15px;
   }
   .open .mobile-menu {
@@ -308,14 +316,14 @@ footer {
     display: none;
     background-color: lightblue;
     position: relative;
-    bottom: 150%;    
+    bottom: 160%;    
   }
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     justify-content: center;
-    
+    border: dotted 12px navy;
   }
   .open .mobile-menu h2 {
     font-size: 3vh;
@@ -342,11 +350,17 @@ footer {
     display: none;
   }
   .menuBox {
-    border: solid 1px black;
     grid-column: 4/6;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../../mainImages/logo.jpg');
+    background-size: 100% 100%;
+    opacity: 85%;
+  }
+
+  .menuBox h2 {
+    margin-top: 53%;
   }
 
   .bottomContent {
@@ -404,6 +418,7 @@ footer {
     background: lightblue;
     color: #6e9de3;
     margin: auto;
+    margin-top: 10px;
   }
   .tablet {
     display: grid;
@@ -442,10 +457,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 10px navy;
     background-color: navy;
     border-radius: 15px;
-    height: 45px;
+    height: 55px;
   }
   .navBox {
     grid-column-start: 1;
@@ -457,6 +471,18 @@ footer {
 
   .menuBox {
     grid-column: 3/4;
+  }
+  .menuBox {
+    background-image: url('../../mainImages/logo.jpg');
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+    opacity: 85%;
+
+  }
+  .menuBox h2 {
+    margin-bottom: 49%;
+    color: #6da5e0;
+
   }
   .content {
     border: solid 1px purple;
